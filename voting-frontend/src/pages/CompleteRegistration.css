@@ -1,0 +1,43 @@
+.complete-registration {
+  max-width: 450px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fffef3;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.complete-registration h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.complete-registration form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.complete-registration input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.complete-registration button {
+  padding: 0.8rem;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.complete-registration button:hover {
+  background-color: #21618c;
+}
