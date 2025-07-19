@@ -25,12 +25,17 @@ function BookSlot() {
   useEffect(() => {
     const token = localStorage.getItem('voteyatra_token');
     const user = localStorage.getItem('voteyatra_user');
-
+    const role = localStorage.getItem('voteyatra_role');
     if (!token || !user) {
       sessionStorage.setItem('flashMessage', 'Please log in to access Book Slot');
       navigate('/login', { replace: true });
       return;
     }
+    if (role === 'admin') {
+  alert('Admins are not allowed to book slots');
+  navigate('/', { replace: true }); // Redirect away
+    return;
+}
 
     setLoggedInUser(user);
   }, [navigate]);

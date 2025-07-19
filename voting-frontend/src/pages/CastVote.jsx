@@ -23,13 +23,17 @@ function CastVote() {
   const navigate = useNavigate();
 
   const token = localStorage.getItem('voteyatra_token');
-
+  const role = localStorage.getItem('voteyatra_role');
   useEffect(() => {
     if (!token) {
       navigate('/login',{ replace: true });
       return;
     }
-
+    if (role === 'admin') {
+  alert('Admins are not allowed to book slots');
+  navigate('/', { replace: true }); // Redirect away
+    return;
+}
     const checkSlot = async () => {
       try {
         const res = await axios.get('http://localhost:3000/vote/user-slot', {
@@ -81,7 +85,7 @@ function CastVote() {
     };
 
     checkSlot();
-  }, [navigate, token]);
+  }, [navigate, token,role]);
 
   const handleVote = async () => {
     if (!selectedChoice) {
