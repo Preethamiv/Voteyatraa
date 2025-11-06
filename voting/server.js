@@ -11,6 +11,11 @@ app.use(cors({
   credentials: true
 }));
 
+app.get('/', (req, res) => {
+  res.send('VoteYatra backend is live!');
+});
+
+
 const authRoutes = require('./routes/auth'); // ✅ import router properly
 const voteRoutes = require('./routes/vote');
 app.use('/vote', voteRoutes);
