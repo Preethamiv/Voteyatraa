@@ -1,0 +1,172 @@
+/* ========== Wrapper Layout ========== */
+/* Remove default spacing from browser */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+
+.tutorial-wrapper {
+  width: 100%;
+  background-color: #f5ca1b;
+  min-height: 100vh;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-header {
+  width: 100vw; /* full viewport width */
+  background-color: rgb(232, 228, 228);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 40px;
+  margin: 0; /* no margin */
+  border-radius: 0; /* remove rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); /* Center it exactly */
+  box-sizing: border-box;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+/* Emblem Logo */
+.emblem {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+/* VoteYatra Title */
+.home-title {
+  font-size: 2rem;
+  color: #2d2d2d;
+  font-weight: bold;
+  flex: 1;
+  text-align: center;
+}
+
+/* Button Container */
+.header-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Welcome Message */
+/* Header Buttons Wrapper */
+.header-buttons {
+  display: flex;
+  flex-direction: column;  /* Stack welcome + button vertically */
+  align-items: flex-end;   /* Align them to the right side */
+  gap: 8px;                /* Space between welcome and button */
+  margin-top: 10px;
+}
+
+/* Welcome Message */
+.welcome-user {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* Styled Header Buttons */
+.register-header-btn,
+.login-header-btn,
+.logout-btn {
+  padding: 10px 18px;
+  border: none;
+  background-color: #f1a208;
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Hover effect for all buttons */
+.register-header-btn:hover,
+.login-header-btn:hover,
+.logout-btn:hover {
+  background-color: #c87d00;
+}
+
+
+/* Horizontal Rule Separator */
+.separator {
+  margin: 30px 0 20px;
+  border: none;
+  border-top: 1px solid #1a030304;
+}
+
+/* ========== Tutorial Content ========== */
+.tutorial-container {
+  max-width: 1000px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.tutorial-container h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.intro-text,
+.closing-text {
+  text-align: center;
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+/* ========== Steps ========== */
+.step {
+  background-color: #fffbe6;
+  border: 1px solid #ffe199;
+  padding: 22px 28px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.step h3 {
+  margin-top: 0;
+  color: #a56b00;
+  font-size: 1.25rem;
+}
+
+.step p {
+  color: #333;
+  font-size: 1.05rem;
+}
+
+/* Responsive tweak */
+@media screen and (max-width: 600px) {
+  .home-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-buttons {
+    align-items: flex-start;
+  }
+
+  .tutorial-container {
+    padding: 20px;
+  }
+}

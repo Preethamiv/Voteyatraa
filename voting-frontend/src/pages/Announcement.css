@@ -1,0 +1,189 @@
+.announcement-container {
+  max-width: 800px;
+  margin:50px auto;
+  padding: 20px;
+  background: #fffef5;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.home-header4 {
+  width: 100vw; /* full viewport width */
+  background-color: rgb(232, 228, 228);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 40px;
+  margin: 0; /* no margin */
+  border-radius: 0; /* remove rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); /* Center it exactly */
+  box-sizing: border-box;
+}
+
+/* Emblem Logo */
+.emblem {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+/* VoteYatra Title */
+.home-title {
+  font-size: 2rem;
+  color: #2d2d2d;
+  font-weight: bold;
+  flex: 10;
+  text-align: center;
+}
+
+/* Button Container */
+.header-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Welcome Message */
+/* Header Buttons Wrapper */
+.header-buttons {
+  display: flex;
+  flex-direction: column;  /* Stack welcome + button vertically */
+  align-items: flex-end;   /* Align them to the right side */
+  gap: 8px;                /* Space between welcome and button */
+  margin-top: 10px;
+}
+
+/* Welcome Message */
+.welcome-user {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* Styled Header Buttons */
+.register-header-btn,
+.login-header-btn,
+.logout-btn {
+  padding: 10px 18px;
+  border: none;
+  background-color: #f1a208;
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Hover effect for all buttons */
+.register-header-btn:hover,
+.login-header-btn:hover,
+.logout-btn:hover {
+  background-color: #c87d00;
+}
+
+
+/* Horizontal Rule Separator */
+.separator {
+  margin: 30px 0 20px;
+  border: none;
+  border-top: 1px solid #1a030304;
+}
+
+
+.announcement-container h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.announcement-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.announcement-form textarea {
+  resize: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.post-btn {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: #f1a208;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.post-btn:hover {
+  background-color: #c87d00;
+}
+
+.post-status {
+  font-size: 0.95rem;
+  color: green;
+}
+
+.announcement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.announcement-card {
+  background-color: #fff9db;
+  padding: 16px;
+  border-left: 5px solid #ffc107;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.announcement-card p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.timestamp {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 6px;
+  display: block;
+  text-align: right;
+}
+
+.no-announcements {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+.delete-announcement-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  margin-top: 5px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.delete-announcement-btn:hover {
+  background-color: #b02a37;
+}

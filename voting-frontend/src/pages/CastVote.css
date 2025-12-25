@@ -1,0 +1,93 @@
+.cast-vote-wrapper {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.cast-vote-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cast-vote-status {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cast-vote-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cast-vote-card {
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  width: 260px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.cast-vote-card:hover {
+  border-color: #4a90e2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cast-vote-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cast-vote-info {
+  margin-top: 10px;
+}
+
+.cast-vote-name {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.cast-vote-party {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.cast-vote-label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.cast-vote-btn {
+  margin: 30px auto 0;
+  display: block;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cast-vote-btn:hover {
+  background-color: #357bd8;
+}
+
+.cast-vote-message {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: green;
+}
